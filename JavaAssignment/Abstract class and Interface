@@ -1,0 +1,18 @@
+Abstract class :- 
+An abstract class is a class that cannot be instantiated (i.e., you cannot create objects of it directly). It can have both abstract methods (methods without a body) and concrete methods (methods with a body). Abstract classes are used to represent a base class that other classes can inherit from.
+Key Points about Abstract Classes:
+1. An abstract class can have both abstract and non-abstract (concrete) methods.
+2. You cannot instantiate an abstract class directly.
+3. It can have member variables and constructors.
+4. A class can inherit only one abstract class (Java supports single inheritance for classes).
+5. It can provide some method implementations while leaving other methods abstract (to be implemented by subclasses).
+
+Interface class :-
+An interface is a reference type in Java, similar to a class, that can contain only abstract methods (methods without a body) and constants (public, static, and final variables). Interfaces provide a way to achieve multiple inheritance in Java (since a class can implement multiple interfaces).
+Key Points about Interfaces:
+An interface can only have abstract methods (until Java 8, after which it can have default methods and static methods).
+All methods in an interface are implicitly public and abstract.
+A class can implement multiple interfaces, allowing for multiple inheritance.
+Interfaces cannot have member variables (but can have constants).
+You cannot instantiate an interface directly.
+A class that implements an interface must provide an implementation for all of the interface's abstract methods unless the class is abstract.
