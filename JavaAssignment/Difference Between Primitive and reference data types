@@ -1,0 +1,56 @@
+Primitive datatypes :- 
+Primitive data types are the basic types that store simple values. They are not objects and are directly stored in memory. Java provides 8 primitive data types:
+byte: 8-bit signed integer.
+short: 16-bit signed integer.
+int: 32-bit signed integer.
+long: 64-bit signed integer.
+float: 32-bit floating-point number.
+double: 64-bit floating-point number.
+char: 16-bit Unicode character.
+boolean: Represents true or false.
+Characteristics:
+Primitive types store data directly in memory.
+They have a fixed size and range.
+They cannot be null.
+They are faster because they are simple and do not require additional objects.
+Example:
+public class PrimitiveExample {
+    public static void main(String[] args) {
+        int a = 10;  // primitive type
+        double b = 20.5;  // primitive type
+        char c = 'A';  // primitive type
+        boolean isActive = true;  // primitive type
+        
+        System.out.println("a: " + a);
+        System.out.println("b: " + b);
+        System.out.println("c: " + c);
+        System.out.println("isActive: " + isActive);
+    }
+}
+
+Reference Datatype :-
+Reference data types refer to objects and arrays, which store references (memory addresses) to the actual data. They are created from classes, interfaces, or arrays.
+
+Characteristics:
+Reference types store references (addresses) of objects in memory.
+They can be null (i.e., they may not point to any object).
+They are more flexible because they can hold large amounts of data (e.g., arrays, strings, objects).
+They are slower compared to primitive types due to object creation and memory access.
+Example:
+public class ReferenceExample {
+    public static void main(String[] args) {
+        // Reference type example (String)
+        String str = "Hello, Java!";  // reference type
+        // Reference type example (Array)
+        int[] numbers = {1, 2, 3, 4};  // reference type
+        
+        System.out.println("String: " + str);
+        System.out.print("Array: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
+}
+
+
+primitive types store simple values directly in memory, whereas reference types store references to objects or arrays, which are more flexible but come with extra overhead.
